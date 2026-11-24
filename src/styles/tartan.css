@@ -1,0 +1,205 @@
+/* ============================================================================
+   Woven Heritage Tartan Patterns — Three Brand Deck Colorways (§1 & §8)
+   Used ONLY as locked-door faces, recurring texture bands, and missing-photo
+   placeholders — never as a full-page background.
+   ============================================================================ */
+
+/* 1. HUNTER (Primary / Recommended default) */
+.tartan-hunter {
+  background-color: #182b20;
+  background-image:
+    /* Subtle wool twill texture */
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.025) 0px,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    /* Brass overcheck hairline (vertical) */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 54px,
+      rgba(176, 141, 79, 0.55) 54px,
+      rgba(176, 141, 79, 0.55) 56px,
+      transparent 56px,
+      transparent 112px
+    ),
+    /* Brass overcheck hairline (horizontal) */
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 54px,
+      rgba(176, 141, 79, 0.55) 54px,
+      rgba(176, 141, 79, 0.55) 56px,
+      transparent 56px,
+      transparent 112px
+    ),
+    /* Claret stripe weave (vertical) */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 20px,
+      rgba(94, 33, 41, 0.52) 20px,
+      rgba(94, 33, 41, 0.52) 28px,
+      transparent 28px,
+      transparent 84px,
+      rgba(28, 42, 58, 0.62) 84px,
+      rgba(28, 42, 58, 0.62) 104px,
+      transparent 104px,
+      transparent 112px
+    ),
+    /* Claret & Navy weave (horizontal) */
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 20px,
+      rgba(94, 33, 41, 0.48) 20px,
+      rgba(94, 33, 41, 0.48) 28px,
+      transparent 28px,
+      transparent 84px,
+      rgba(28, 42, 58, 0.58) 84px,
+      rgba(28, 42, 58, 0.58) 104px,
+      transparent 104px,
+      transparent 112px
+    ),
+    /* Deep hunter base weave */
+    repeating-linear-gradient(
+      90deg,
+      rgba(30, 51, 39, 0.9) 0px,
+      rgba(30, 51, 39, 0.9) 38px,
+      rgba(15, 29, 21, 0.9) 38px,
+      rgba(15, 29, 21, 0.9) 56px
+    );
+}
+
+/* 2. CLARET / Royal Stewart Heritage */
+.tartan-claret {
+  background-color: #4f1a22;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.025) 0px,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 52px,
+      rgba(176, 141, 79, 0.68) 52px,
+      rgba(176, 141, 79, 0.68) 54px,
+      transparent 54px,
+      transparent 58px,
+      rgba(247, 241, 227, 0.28) 58px,
+      rgba(247, 241, 227, 0.28) 59px,
+      transparent 59px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 52px,
+      rgba(176, 141, 79, 0.68) 52px,
+      rgba(176, 141, 79, 0.68) 54px,
+      transparent 54px,
+      transparent 58px,
+      rgba(247, 241, 227, 0.28) 58px,
+      rgba(247, 241, 227, 0.28) 59px,
+      transparent 59px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 14px,
+      rgba(30, 51, 39, 0.64) 14px,
+      rgba(30, 51, 39, 0.64) 30px,
+      transparent 30px,
+      transparent 82px,
+      rgba(28, 42, 58, 0.62) 82px,
+      rgba(28, 42, 58, 0.62) 96px,
+      transparent 96px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 14px,
+      rgba(30, 51, 39, 0.6) 14px,
+      rgba(30, 51, 39, 0.6) 30px,
+      transparent 30px,
+      transparent 82px,
+      rgba(28, 42, 58, 0.56) 82px,
+      rgba(28, 42, 58, 0.56) 96px,
+      transparent 96px,
+      transparent 112px
+    );
+}
+
+/* 3. MIDNIGHT NAVY / Black Watch */
+.tartan-navy {
+  background-color: #162230;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.025) 0px,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 54px,
+      rgba(176, 141, 79, 0.42) 54px,
+      rgba(176, 141, 79, 0.42) 55.5px,
+      transparent 55.5px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 54px,
+      rgba(176, 141, 79, 0.42) 54px,
+      rgba(176, 141, 79, 0.42) 55.5px,
+      transparent 55.5px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 16px,
+      rgba(30, 51, 39, 0.68) 16px,
+      rgba(30, 51, 39, 0.68) 38px,
+      transparent 38px,
+      transparent 78px,
+      rgba(11, 18, 26, 0.72) 78px,
+      rgba(11, 18, 26, 0.72) 98px,
+      transparent 98px,
+      transparent 112px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 16px,
+      rgba(30, 51, 39, 0.62) 16px,
+      rgba(30, 51, 39, 0.62) 38px,
+      transparent 38px,
+      transparent 78px,
+      rgba(11, 18, 26, 0.68) 78px,
+      rgba(11, 18, 26, 0.68) 98px,
+      transparent 98px,
+      transparent 112px
+    );
+}
+
+/* Narrow decorative tartan ribbon band between sections */
+.tartan-band {
+  height: 12px;
+  width: 100%;
+  border-top: 1px solid var(--brass-hairline);
+  border-bottom: 1px solid var(--brass-hairline);
+}
