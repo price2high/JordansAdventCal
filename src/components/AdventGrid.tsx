@@ -156,12 +156,12 @@ export function AdventGrid({
     >
       <div className="container">
         <div className="section-header">
-          <span className="eyebrow">December 1–25, 2026 · Eastern Time</span>
+          <span className="eyebrow">December 1–25, 2026 · Pacific Time</span>
           <h2 id="calendar-heading" className="section-header__title">
             Twenty-Five Wrapped Gifts
           </h2>
           <p className="section-header__copy">
-            One gift unlocks each morning at 12:01 AM America/New_York. Tap an
+            One gift unlocks each morning at 12:01 AM America/Los_Angeles. Tap an
             open day to unwrap its bake and healing pairing; once unwrapped, it
             stays open all season.
           </p>

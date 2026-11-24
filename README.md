@@ -1,6 +1,6 @@
 # Advent Calendar Recipe Website (React + Vite)
 
-A heritage holiday Advent calendar recipe website featuring **25 doors (December 1–25, 2026)**, one recipe unlocked daily at **12:01 AM America/New_York**, pairing each dessert/bake across **four dietary editions** (`Classic`, `Sculpt`, `Nourish`, `Pure`) with a functional **healing drink**.
+A heritage holiday Advent calendar recipe website featuring **25 doors (December 1–25, 2026)**, one recipe unlocked daily at **12:01 AM America/Los_Angeles**, pairing each dessert/bake across **four dietary editions** (`Classic`, `Sculpt`, `Nourish`, `Pure`) with a functional **healing drink**.
 
 ---
 
@@ -42,8 +42,8 @@ All open items from the IDE Build Brief are isolated in single config/data files
 
 ## Pre-Launch Date Preview
 
-By default, all unlock checks and countdowns run strictly in **America/New_York** (`00:01 AM EST`).
+By default, all unlock checks and countdowns run strictly in **America/Los_Angeles** (`00:01 AM PST`).
 
 To test unlocked doors, the Day Preview strip, recipe pages, and the Day 25 Finale prior to December 1:
-- Use the **Date Preview** buttons in the footer (`Live ET`, `Dec 1`, `Dec 12`, `Dec 25`), or
+- Use the **Date Preview** buttons in the footer (`Live PT`, `Dec 1`, `Dec 12`, `Dec 25`), or
 - Append `?preview=2026-12-12` to the URL.

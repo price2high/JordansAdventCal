@@ -40,7 +40,7 @@ export function Hero({
         </div>
 
         <p className="hero__lead">
-          One quiet ritual each morning at 12:01 AM Eastern: an heirloom holiday
+          One quiet ritual each morning at 12:01 AM Pacific: an heirloom holiday
           bake paired with a functional healing drink, crafted across four dietary
           editions.
         </p>

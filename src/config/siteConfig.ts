@@ -44,8 +44,8 @@ export const SITE_CONFIG = {
   homeAccentLine: 'Twenty-five unhurried evenings by the hearth.',
   dietaryBadge: '100% Vegan & Halal Verified',
   seasonYear: 2026,
-  timezone: 'America/New_York',
-  launchIsoET: '2026-12-01T00:01:00-05:00',
+  timezone: 'America/Los_Angeles',
+  launchIsoET: '2026-12-01T00:01:00-08:00',
 
   /**
    * Mailing list & n8n "Advent Daily Dispatch" integration (§6 & §9).

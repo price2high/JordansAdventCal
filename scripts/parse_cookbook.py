@@ -412,7 +412,7 @@ def main():
         json.dump(
             {
                 "season": 2026,
-                "timezone": "America/New_York",
+                "timezone": "America/Los_Angeles",
                 "unlockTimeLocal": "00:01",
                 "totalDoors": 25,
                 "doors": doors,

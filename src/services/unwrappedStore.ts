@@ -1,7 +1,7 @@
 /**
  * Persists the visitor's set of unwrapped door numbers in localStorage (§5 & §8).
  *
- * Unlock eligibility is ALWAYS derived live from `unlockDate` in America/New_York;
+ * Unlock eligibility is ALWAYS derived live from `unlockDate` in America/Los_Angeles;
  * this store tracks ONLY which eligible gifts the visitor has unwrapped.
  */
 

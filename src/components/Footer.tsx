@@ -10,7 +10,7 @@ interface FooterProps {
 }
 
 const PREVIEW_PRESETS: Array<{ label: string; value: string | null }> = [
-  { label: 'Live ET', value: null },
+  { label: 'Live PT', value: null },
   { label: 'Dec 1 (Launch)', value: '2026-12-01' },
   { label: 'Dec 12 (Mid-Season)', value: '2026-12-12' },
   { label: 'Dec 25 (Finale)', value: '2026-12-25' },
@@ -36,7 +36,7 @@ export function Footer({
 
           <div style={{ textAlign: 'right' }}>
             <div className="eyebrow" style={{ fontSize: '0.64rem' }}>
-              Calendar Clock · America/New_York
+              Calendar Clock · America/Los_Angeles
             </div>
             <div style={{ marginTop: '0.2rem' }}>
               {formatEasternNowLabel(effectiveNowMs)}
@@ -47,7 +47,7 @@ export function Footer({
         <div className="footer-bottom">
           <div>
             © {SITE_CONFIG.seasonYear} {SITE_CONFIG.siteName}. Doors unlock
-            daily at 12:01 AM EST.
+            daily at 12:01 AM PST.
           </div>
 
           <div

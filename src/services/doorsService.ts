@@ -32,7 +32,7 @@ export function loadRawDoors(): Promise<RawDoorRecord[]> {
 }
 
 /**
- * Produces strictly sanitized UI door objects for the given Eastern timestamp.
+ * Produces strictly sanitized UI door objects for the given Pacific timestamp.
  * Locked doors are stripped to title-free stubs so no recipe content can reach
  * component props, DOM nodes, or assistive technology (§3 & §10).
  */

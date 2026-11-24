@@ -31,7 +31,7 @@ export interface HealingDrink {
 export interface RawDoorRecord {
   day: number;
   slug: string;
-  unlockDate: string; // YYYY-MM-DD (America/New_York)
+  unlockDate: string; // YYYY-MM-DD (America/Los_Angeles)
   isFinale: boolean;
   title: string;
   category: RecipeCategory;

@@ -1,6 +1,6 @@
 # Advent Recipe Website — IDE Build Brief
 
-Build a cozy holiday Advent calendar recipe website: **25 doors, December 1–25, 2026**, one recipe revealed per day. Each day pairs a holiday dessert/bake with a healing drink. All recipes are **100% Vegan & Halal verified**. Launch: **December 1, 2026, 12:01 AM EST** (Door 1 unlocks at 00:01 America/New_York).
+Build a cozy holiday Advent calendar recipe website: **25 doors, December 1–25, 2026**, one recipe revealed per day. Each day pairs a holiday dessert/bake with a healing drink. All recipes are **100% Vegan & Halal verified**. Launch: **December 1, 2026, 12:01 AM PST** (Door 1 unlocks at 00:01 America/Los_Angeles).
 
 This brief is the source of truth. Brand values below are transcribed from the project's Brand Cards deck. Recipe content comes from the cookbook PDF and the tracker export listed under **Content Sources** — do not invent recipes, names, or photo links.
 
@@ -77,7 +77,7 @@ Implement the site name and domain as a single config value so it can be swapped
 - 25 doors, numbered 1–25, one per December date (Door *n* unlocks December *n*).
 - **Locked state** (date not reached): tartan face with the door number in Antique Brass. No recipe title or image visible.
 - **Unlocked state**: the door reveals the dish (photo + title). Once unlocked, a door stays open for the rest of the season.
-- Unlock moment: **00:01 AM America/New_York** on the door's date. All date logic in America/New_York regardless of visitor timezone.
+- Unlock moment: **00:01 AM America/Los_Angeles** on the door's date. All date logic in America/Los_Angeles regardless of visitor timezone.
 - Clicking an unlocked door goes to that day's recipe page. Clicking a locked door does nothing (a gentle "opens Dec *n*" hint is fine).
 
 ## 4. Recipe Page Template
@@ -172,6 +172,6 @@ From the brand deck — carry these behaviors into the site where they fit:
 ## 10. Tech Notes
 
 - Static-first build is fine; door data as a single JSON file modeled on `advent-doors.json`.
-- All unlock/date logic in **America/New_York**.
+- All unlock/date logic in **America/Los_Angeles**.
 - Fully responsive; the grid must work one-handed on a phone.
 - Accessibility: locked doors must not expose recipe content to screen readers or page source beyond the title-free locked state.

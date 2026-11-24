@@ -92,7 +92,7 @@ export default function App() {
     };
   }, []);
 
-  // Tick every second for accurate America/New_York countdown & midnight unlock
+  // Tick every second for accurate America/Los_Angeles countdown & midnight unlock
   useEffect(() => {
     const timer = window.setInterval(() => {
       setLiveNowMs(Date.now());
@@ -107,7 +107,7 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Effective Eastern timestamp (live real-time by default, or reviewer preview date)
+  // Effective Pacific timestamp (live real-time by default, or reviewer preview date)
   const effectiveNowMs = useMemo(() => {
     const previewMs = previewDateToEpochMs(previewDate);
     if (previewMs === null) return liveNowMs;
@@ -194,7 +194,7 @@ export default function App() {
               className="preview-ribbon__reset"
               onClick={() => handleSelectPreviewDate(null)}
             >
-              Return to Live Eastern Time
+              Return to Live Pacific Time
             </button>
           </div>
         </div>

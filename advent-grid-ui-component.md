@@ -48,8 +48,8 @@ Past days that were never unwrapped stay available: any door whose date has pass
 
 ## 6. Date & Unlock Logic
 
-- Door *n* unlocks **December *n* at 00:01 AM America/New_York**.
-- All date comparisons in America/New_York, regardless of the visitor's timezone.
+- Door *n* unlocks **December *n* at 00:01 AM America/Los_Angeles**.
+- All date comparisons in America/Los_Angeles, regardless of the visitor's timezone.
 - Locked gifts must not leak content: no recipe title, image, or alt text in the DOM/page source for a still-wrapped gift — only the door number and "Opens Dec *n*".
 
 ## 7. Copy
@@ -74,7 +74,7 @@ One entry per door, modeled on `advent-doors.json`:
 ```
 
 - `photoSrc` may be null (photos pending) — render the unwrapped state with a styled tartan placeholder + alt text until real photos land.
-- The component derives state (locked / today / unwrapped-eligible) from `unlockDate` vs. today in America/New_York; it does not store unlock state itself. Only the *visitor's unwrapped set* persists (local storage).
+- The component derives state (locked / today / unwrapped-eligible) from `unlockDate` vs. today in America/Los_Angeles; it does not store unlock state itself. Only the *visitor's unwrapped set* persists (local storage).
 
 ## 9. Accessibility
 

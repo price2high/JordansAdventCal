@@ -1,21 +1,21 @@
 /**
- * Strict America/New_York date & unlock logic (§3 & §10).
+ * Strict America/Los_Angeles date & unlock logic (§3 & §10).
  *
- * Every door unlocks at 00:01 AM America/New_York (EST, UTC-5 in December)
+ * Every door unlocks at 00:01 AM America/Los_Angeles (PST, UTC-8 in December)
  * regardless of the visitor's local browser timezone.
  */
 
 export const SEASON_YEAR = 2026;
-export const EASTERN_TZ = 'America/New_York';
+export const EASTERN_TZ = 'America/Los_Angeles';
 
 /**
  * Exact UTC epoch ms when Door `day` (1..25) unlocks:
- * December `day`, 2026 at 00:01:00 EST (-05:00).
- * Note: US Daylight Saving Time ends Nov 1, 2026, so all of Dec 2026 is EST (-05:00).
+ * December `day`, 2026 at 00:01:00 PST (-08:00).
+ * Note: US Daylight Saving Time ends Nov 1, 2026, so all of Dec 2026 is PST (-08:00).
  */
 export function getDoorUnlockEpochMs(day: number): number {
   const dd = String(day).padStart(2, '0');
-  return Date.parse(`${SEASON_YEAR}-12-${dd}T00:01:00-05:00`);
+  return Date.parse(`${SEASON_YEAR}-12-${dd}T00:01:00-08:00`);
 }
 
 /**
@@ -26,13 +26,13 @@ export function isDoorUnlocked(day: number, nowMs: number): boolean {
 }
 
 /**
- * Parse an optional preview date string (YYYY-MM-DD, interpreted as 12:00 PM EST)
+ * Parse an optional preview date string (YYYY-MM-DD, interpreted as 12:00 PM PST)
  * so reviewers can test locked/unlocked states prior to Dec 1 without altering live logic.
  */
 export function previewDateToEpochMs(isoDate: string | null): number | null {
   if (!isoDate) return null;
   if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return null;
-  const ms = Date.parse(`${isoDate}T12:00:00-05:00`);
+  const ms = Date.parse(`${isoDate}T12:00:00-08:00`);
   return Number.isNaN(ms) ? null : ms;
 }
 

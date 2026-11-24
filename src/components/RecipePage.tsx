@@ -85,7 +85,7 @@ export function RecipePage({
               Opens {formatUnlockDateLong(lockedDay)}
             </h1>
             <p style={{ color: 'var(--ivory-muted)', margin: '0 0 1.65rem' }}>
-              This door unseals at 12:01 AM America/New_York. Return to the
+              This door unseals at 12:01 AM America/Los_Angeles. Return to the
               calendar to explore open doors or join the morning dispatch.
             </p>
             <button type="button" className="btn btn--primary" onClick={onGoHome}>

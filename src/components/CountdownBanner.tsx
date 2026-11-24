@@ -38,11 +38,11 @@ export function CountdownBanner({
             <>
               <span className="eyebrow">First Door Unlocks Soon</span>
               <h2 className="status-band__title">
-                Door 01 opens December 1 at 12:01 AM EST
+                Door 01 opens December 1 at 12:01 AM PST
               </h2>
               <p className="status-band__copy">
                 Every morning from December 1 through December 25, a single door
-                unseals on Eastern Time — revealing a cozy bake, four dietary
+                unseals on Pacific Time — revealing a cozy bake, four dietary
                 editions, and its paired healing drink.
               </p>
               <a href="#dispatch" className="btn btn--primary">
@@ -160,7 +160,7 @@ export function CountdownBanner({
               </div>
               <p className="countdown-caption">
                 Until Door {pad(clock.nextDoor)} unlocks · Dec {clock.nextDoor},
-                2026 at 12:01 AM America/New_York
+                2026 at 12:01 AM America/Los_Angeles
               </p>
             </>
           ) : (
