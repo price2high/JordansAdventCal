@@ -885,7 +885,7 @@ input {
 }
 
 /* ============================================================================
-   Same-House Editorial Showcase + Interactive Palette Swatches (§7 & §8)
+   Same-House Editorial Showcase (§7)
    ============================================================================ */
 .craft-section {
   background: var(--ivory);
@@ -899,7 +899,6 @@ input {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.5rem, 3vw, 2.5rem);
-  margin-bottom: 3rem;
 }
 
 .craft-card {
@@ -942,74 +941,7 @@ input {
   color: var(--ink-muted);
 }
 
-/* Palette Swatches strip — click to copy hex (§8) */
-.palette-strip {
-  border-top: 1px solid rgba(176, 141, 79, 0.4);
-  padding-top: 2rem;
-}
 
-.palette-strip__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.palette-strip__hint {
-  font-size: 0.8rem;
-  color: var(--chestnut);
-}
-
-.palette-swatches {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.swatch-btn {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  border: 1px solid rgba(30, 51, 39, 0.18);
-  background: #fdfaf3;
-  cursor: pointer;
-  text-align: left;
-  transition: transform var(--transition-ease), border-color var(--transition-ease);
-}
-
-.swatch-btn:hover {
-  transform: translateY(-2px);
-  border-color: var(--brass);
-}
-
-.swatch-btn__chip {
-  height: 52px;
-  width: 100%;
-  border-bottom: 1px solid rgba(30, 51, 39, 0.12);
-}
-
-.swatch-btn__info {
-  padding: 0.55rem 0.6rem;
-}
-
-.swatch-btn__name {
-  display: block;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.98rem;
-  color: var(--hunter);
-  line-height: 1.15;
-}
-
-.swatch-btn__hex {
-  display: block;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  color: var(--chestnut);
-  margin-top: 0.15rem;
-}
 
 /* ============================================================================
    Daily Dispatch Email Signup (§2 & §6)
@@ -1766,9 +1698,7 @@ input {
     grid-template-columns: 1fr;
   }
 
-  .palette-swatches {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+
 
   .day-preview__body {
     grid-template-columns: 1fr;
@@ -1810,9 +1740,7 @@ input {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .palette-swatches {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+
 
   .recipe-stats {
     grid-template-columns: repeat(3, 1fr);
