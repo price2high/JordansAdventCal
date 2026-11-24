@@ -31,7 +31,7 @@ export const SITE_CONFIG = {
   ] as const,
   /** Config placeholder — update before Dec 1 launch (§6 & §9). */
   domain: 'example-advent-domain.com',
-  siteUrl: 'https://example-advent-domain.com',
+  siteUrl: 'https://houseofjnb.com',
   /** Daily Dispatch sender name mirrors siteName per §6. */
   get senderName(): string {
     return this.siteName;
@@ -52,7 +52,7 @@ export const SITE_CONFIG = {
    * Connect your list provider or n8n webhook URL before Dec 1.
    * When empty, captures are persisted locally in the browser for review.
    */
-  mailingListWebhookUrl: '',
+  mailingListWebhookUrl: 'https://script.google.com/macros/s/AKfycbxpjxuY7ty8EZorAwPSkzr4ObNT6lB0mWYim64BaDzzBSdSw7O-oHzQz9OQ7WQ-kr1L5g/exec',
   dispatchWorkflowName: 'Advent Daily Dispatch',
 
   /**
