@@ -1,26 +1,9 @@
-import { useState } from 'react';
-import { Check, Copy } from 'lucide-react';
 import { SITE_CONFIG } from '../config/siteConfig';
 
 /**
- * Editorial "Same House" Craft Showcase (§1 & §7) +
- * Interactive Brand Palette Swatches (copy hex on click, §8).
+ * Editorial "Same House" Craft Showcase (§1 & §7).
  */
 export function EditorialCraft() {
-  const [copiedHex, setCopiedHex] = useState<string | null>(null);
-
-  const handleCopyHex = async (hex: string) => {
-    try {
-      await navigator.clipboard.writeText(hex);
-      setCopiedHex(hex);
-      window.setTimeout(() => {
-        setCopiedHex((prev) => (prev === hex ? null : prev));
-      }, 1800);
-    } catch {
-      setCopiedHex(hex);
-    }
-  };
-
   return (
     <section className="craft-section" aria-labelledby="craft-heading">
       <div className="container">
@@ -30,7 +13,7 @@ export function EditorialCraft() {
             id="craft-heading"
             className="section-header__title section-header__title--dark"
           >
-            The Bake &amp; The Healing Cup
+            The Bake & The Healing Cup
           </h2>
           <p className="section-header__copy section-header__copy--dark">
             Each door pairs an heirloom holiday bake — offered in Classic,
@@ -79,57 +62,6 @@ export function EditorialCraft() {
               </p>
             </div>
           </article>
-        </div>
-
-        {/* Palette Swatches — click to copy hex (§8) */}
-        <div className="palette-strip">
-          <div className="palette-strip__top">
-            <span className="eyebrow eyebrow--dark">
-              House Palette · 60 / 25 / 15 Ratio
-            </span>
-            <span className="palette-strip__hint">
-              {copiedHex
-                ? `Copied ${copiedHex} to clipboard`
-                : 'Click any swatch to copy its hex value'}
-            </span>
-          </div>
-
-          <div className="palette-swatches">
-            {SITE_CONFIG.palette.map((swatch) => {
-              const isCopied = copiedHex === swatch.hex;
-              return (
-                <button
-                  key={swatch.hex}
-                  type="button"
-                  className="swatch-btn"
-                  onClick={() => handleCopyHex(swatch.hex)}
-                  aria-label={`Copy ${swatch.name} hex ${swatch.hex}`}
-                >
-                  <span
-                    className="swatch-btn__chip"
-                    style={{ backgroundColor: swatch.hex }}
-                  />
-                  <span className="swatch-btn__info">
-                    <span className="swatch-btn__name">
-                      {swatch.name}
-                      {swatch.ratio ? ` · ${swatch.ratio}` : ''}
-                    </span>
-                    <span className="swatch-btn__hex">
-                      {isCopied ? (
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
-                          <Check size={11} aria-hidden="true" /> Copied
-                        </span>
-                      ) : (
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
-                          <Copy size={10} aria-hidden="true" /> {swatch.hex}
-                        </span>
-                      )}
-                    </span>
-                  </span>
-                </button>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>
